@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Pacifico&family=Roboto:wght@100&display=swap"); /*pacifico font*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Pacifico&family=Raleway:wght@600&family=Roboto:wght@100&display=swap"); /*Raleway font*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Agustina Regular, Raleway, "Courier New", Courier, monospace;
+}
+:root {
+  --main-color: #6a00c7;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  list-style: none;
+}
+header {
+  height: 100vh;
+}
+/* Start of navbar */
+.navbar {
+  height: 7rem;
+  width: 100vw;
+  padding: 0rem 10rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__signiture {
+  color: var(--main-color);
+  font-family: pacifico, "Courier New", Courier, monospace;
+  display: inline-block;
+  font-size: 2rem;
+}
+.navbar__linksContainer {
+  height: 2.4rem;
+}
+.navbar__links {
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  height: 100%;
+}
+.navbar__links:hover {
+  background-color: #eee;
+}
+.navbar__links--active {
+  background-color: #ccc;
+}
+.navbar__links--active:hover {
+  background-color: #ccc;
+}
+/* ------------start of hero------------ */
+
+.hero {
+  position: relative;
+  padding: 10rem;
+  padding-right: 0rem;
+}
+.hero__content {
+  width: 60rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.hero__heading {
+  font-size: 4.8rem;
+}
+.hero__paragraph {
+  line-height: 44px;
+  font-size: 2.2rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+.hero__background {
+  display: inline-block;
+  width: 60.646rem;
+  height: 42.818rem;
+}
+.hero__iconsContainer {
+  margin-bottom: 4rem;
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__icon {
+  transition: fill 0.7s;
+}
+.hero__icon:hover {
+  fill: #000;
+}
+
+.hero__cta {
+  display: inline-block;
+  width: 14rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border: solid 1px #fff;
+  transition: all 0.5s;
+}
+.hero__cta:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+/*---------------- Start of pageTwo ---------------*/
+
+.pageTwo {
+  width: 100vw;
+  height: 80vh;
+}
+.pageTwo--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.pageTwo__background {
+  width: 64.4rem;
+  height: 31.7rem;
+}
+.pageTwo__content {
+  height: 36rem;
+  width: 60rem;
+  display: inline-block;
+}
+.pageTwo__heading--main {
+  letter-spacing: 3px;
+  margin-bottom: 10rem;
+  width: 100vw;
+  text-align: center;
+  font-size: 4.5rem;
+}
+.pageTwo__heading--sub {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+.pageTwo__li--text:first-child {
+  margin-top: 1rem;
+}
+.pageTwo__li--text {
+  color: #888;
+  line-height: 34px;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+.pageTwo__li--icons:first-child {
+  margin-left: 12rem;
+}
+.pageTwo__li--icons {
+  margin-left: 2rem;
+}
+/*------------- Start of pageThree ------------- */
+.pageThree {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  margin: 10rem 0;
+  padding-left: 8rem;
+}
+.pageThree__content {
+  width: 60rem;
+  display: inline-block;
+}
+.pageThree__background {
+  width: 62rem;
+  height: 58rem;
+}
+.pageThree__heading--main {
+  margin-bottom: 6rem;
+  font-size: 4.5rem;
+}
+.pageThree__heading--sub {
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 6rem;
+  position: relative;
+}
+.pageThree__heading--sub::before,
+.pageThree__heading--sub::after {
+  content: "";
+  width: 55rem;
+  height: 2rem;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  border-radius: 16px;
+}
+.pageThree__heading--sub::after {
+  background-color: var(--main-color);
+}
+.pageThree__li:first-of-type .pageThree__heading--sub::after {
+  width: 46rem;
+}
+.pageThree__li:nth-of-type(2) .pageThree__heading--sub::after {
+  width: 31rem;
+}
+.pageThree__li:nth-of-type(3) .pageThree__heading--sub::after {
+  width: 36rem;
+}
+
+/*-------------footer-------------*/
+html {
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}

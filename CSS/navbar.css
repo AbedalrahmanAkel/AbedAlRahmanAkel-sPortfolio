@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Pacifico&family=Roboto:wght@100&display=swap"); /*pacifico font*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Pacifico&family=Raleway:wght@600&family=Roboto:wght@100&display=swap"); /*Raleway font*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Agustina Regular, Raleway, "Courier New", Courier, monospace;
+}
+:root {
+  --main-color: #6a00c7;
+  --sub-color: #d5a6ff;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  list-style: none;
+}
+/*================= Start Of Navbar ================= */
+.navbar {
+  height: 7rem;
+  width: 100vw;
+  padding: 0rem 5vw;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__signiture {
+  color: var(--main-color);
+  font-family: pacifico, "Courier New", Courier, monospace;
+  display: inline-block;
+  font-size: 2rem;
+}
+.navbar__linksContainer {
+  transform: skew(-10deg);
+  height: 2.4rem;
+}
+.navbar__links {
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  height: 100%;
+  margin-left: .5rem;
+  box-shadow: 2px -2px 5px 2px rgba(0,0,0,0.35) inset;
+  -webkit-box-shadow: 2px -2px 5px 2px rgba(0,0,0,0.35) inset;
+  -moz-box-shadow: 2px -2px 5px 2px rgba(0,0,0,0.35) inset;
+}
+/* -----Start of Buttons EFFECT----- */
+/* .{
+  transform: skew(-6deg);
+  box-shadow: 1.5px -1.5px 4px 1px rgba(0,0,0,.45) inset;
+} */
+/* --End of Buttons Effect-- */
+.navbar__links:hover {
+  background-color: #eee;
+}
+.navbar__links--active {
+  background-color: var(--sub-color);
+}
+.navbar__links--active:hover {
+  background-color: var(--sub-color);
+}

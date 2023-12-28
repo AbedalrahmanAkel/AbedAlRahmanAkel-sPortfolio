@@ -1,0 +1,139 @@
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  list-style: none;
+}
+header {
+  /* height: 80vh; */
+}
+
+/* ------------start of hero------------ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+.hero__content {
+  width: 50%;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.hero__heading {
+  font-size: 4.8rem;
+}
+.hero__paragraph {
+  line-height: 44px;
+  font-size: 2.2rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+.hero__background {
+  width: 40%;
+  display: inline-block;
+}
+.hero__iconsContainer {
+  margin-bottom: 2rem;
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__icon {
+  transition: fill 0.7s;
+}
+.hero__icon:hover {
+  fill: #000;
+}
+
+.hero__cta {
+  display: inline-block;
+  width: 14rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin-left: 7%;
+  font-size: 1.5rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border: solid 1px var(--main-color);
+  transform: skew(-6deg);
+  box-shadow: 1.5px -1.5px 4px 1px rgba(0,0,0,.45) inset;
+  transition: all 0.4s;
+}
+.hero__cta:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+/*---------------- Start of pageTwo ---------------*/
+
+.pageTwo {
+  width: 100vw;
+  margin-bottom: 5rem;
+}
+.pageTwo--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pageTwo__background {
+  width: 50%;
+}
+.pageTwo__content {
+  margin-left: 5rem;
+  width: 40%;
+  display: inline-block;
+}
+.pageTwo__heading--main {
+  letter-spacing: 3px;
+  margin-bottom: 5rem;
+  width: 100vw;
+  text-align: center;
+  font-size: 4.5rem;
+}
+.pageTwo__heading--sub {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+.pageTwo__li--text:first-child {
+  margin-top: 1rem;
+}
+.pageTwo__li--text {
+  color: #888;
+  line-height: 34px;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.pageTwo__li--icons {
+  margin-left: 2rem;
+}
+/*-------------footer-------------*/
+body{
+  position: relative;
+  padding-bottom: 2rem;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1020px){
+
+}

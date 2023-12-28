@@ -1,0 +1,64 @@
+header {
+  min-height: 100vh;
+}
+/*------------- Start of hero ------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding-left: 8rem;
+  padding-top: 5rem;
+}
+.hero__content {
+  width: 50%;
+  display: inline-block;
+}
+.hero__background {
+  width: 48%;
+}
+.hero__heading--main {
+  margin-bottom: 6rem;
+  font-size: 4.5rem;
+}
+.hero__heading--sub {
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 6rem;
+  position: relative;
+}
+.hero__heading--sub::before,
+.hero__heading--sub::after {
+  content: "";
+  width: 35vw;
+  height: 2rem;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  border-radius: 16px;
+}
+.hero__heading--sub::after {
+  background-color: var(--main-color);
+}
+.hero__li:first-of-type .hero__heading--sub::after {
+  width: 31vw;
+}
+.hero__li:nth-of-type(2) .hero__heading--sub::after {
+  width: 25vw;
+}
+.hero__li:nth-of-type(3) .hero__heading--sub::after {
+  width: 28vw;
+}
+/*-------------footer-------------*/
+body{
+  position: relative;
+  padding-bottom: 4rem;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}

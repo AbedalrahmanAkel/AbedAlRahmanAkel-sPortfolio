@@ -1,0 +1,89 @@
+header {
+  height: 49rem;
+}
+/* Start of navbar */
+
+/* End of navbar */
+/* -----------Start of hero----------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+.hero__background {
+  width: 45%;
+}
+.hero__contentContainer {
+  width: 50%;
+  display: inline-block;
+}
+.hero__contentContainer * {
+  text-align: center;
+}
+.hero__heading {
+  padding: 3rem;
+  padding-bottom: 3rem;
+  font-size: 4.2rem;
+}
+.hero__paragraph {
+  color: #888;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 34px;
+}
+/* end of hero */
+/* end of header */
+/* ------------Start of pageTwo------------ */
+/* ------Start of pageTwo__cards----- */
+.pageTwo {
+  padding-top: 2rem;
+  width: 100vw;
+}
+.pageTwo__cardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.pageTwo__cards {
+  position: relative;
+  background-color: whitesmoke;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 38rem;
+  height: 18rem;
+  box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.3);
+}
+.pageTwo__cards:hover {
+  box-shadow: 0 8px 15px 4px rgba(0, 0, 0, 0.3);
+}
+.cards__heading {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.cards__des {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.cards__date {
+  position: absolute;
+  left: 1.4rem;
+  bottom: 1.4rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+  color: #888;
+}
+/*-------------footer-------------*/
+html {
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}

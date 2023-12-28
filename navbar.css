@@ -1,0 +1,44 @@
+/*================= Start Of Navbar ================= */
+:root {
+  --main-color: #6a00c7;
+  --sub-color: #d5a6ff;
+}
+.navbar {
+  height: 7rem;
+  width: 100vw;
+  padding: 0rem 5vw;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__signiture {
+  color: var(--main-color);
+  font-family: pacifico, "Courier New", Courier, monospace;
+  display: inline-block;
+  font-size: 2rem;
+}
+.navbar__linksContainer {
+  transform: skew(-10deg);
+  height: 2.4rem;
+}
+.navbar__links {
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  height: 100%;
+  margin-left: .5rem;
+  box-shadow: 2px -2px 5px 2px rgba(0,0,0,0.35) inset;
+/* -webkit-box-shadow: 1px -1px 5px 2px rgba(0,0,0,0.35) inset;
+-moz-box-shadow: 2px -2px 5px 2px rgba(0,0,0,0.35) inset; */
+}
+.navbar__links:hover {
+  background-color: #eee;
+}
+.navbar__links--active {
+  background-color: var(--sub-color);
+}
+.navbar__links--active:hover {
+  background-color: var(--sub-color);
+}

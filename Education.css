@@ -26,40 +26,7 @@ header {
   height: 100vh;
 }
 /* Start of navbar */
-.navbar {
-  height: 7rem;
-  width: 100vw;
-  padding: 0rem 5vw;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar__signiture {
-  color: var(--main-color);
-  font-family: pacifico, "Courier New", Courier, monospace;
-  display: inline-block;
-  font-size: 2rem;
-}
-.navbar__linksContainer {
-  height: 2.4rem;
-}
-.navbar__links {
-  border-radius: 10px;
-  padding: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  height: 100%;
-}
-.navbar__links:hover {
-  background-color: #eee;
-}
-.navbar__links--active {
-  background-color: #ccc;
-}
-.navbar__links--active:hover {
-  background-color: #ccc;
-}
+
 /* End of navbar */
 .hero {
   padding-top: 6rem;
@@ -87,8 +54,10 @@ header {
   font-size: 3.5rem;
 }
 .pageTwo {
-  padding-top: 8rem;
-  height: 94vh; /*TEST*/
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content:center;
+  padding: 4rem 0;
 }
 .pageTwo__heading {
   text-align: center;
@@ -96,7 +65,8 @@ header {
 }
 .pageTwo__card {
   padding: 2rem;
-  margin: 4rem 26rem;
+  margin-top: 4rem;
+  transform:translateX(-50%) ;
   width: 84rem;
   height: 40rem;
   border-radius: 14px;

@@ -8,6 +8,7 @@
 }
 :root {
   --main-color: #6a00c7;
+  --sub-color: #d5a6ff;
 }
 html {
   scroll-behavior: smooth;
@@ -25,41 +26,7 @@ li {
 header {
   /* height: 80vh; */
 }
-/* Start of navbar */
-.navbar {
-  height: 7rem;
-  width: 100vw;
-  padding: 0rem 5vw;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar__signiture {
-  color: var(--main-color);
-  font-family: pacifico, "Courier New", Courier, monospace;
-  display: inline-block;
-  font-size: 2rem;
-}
-.navbar__linksContainer {
-  height: 2.4rem;
-}
-.navbar__links {
-  border-radius: 10px;
-  padding: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  height: 100%;
-}
-.navbar__links:hover {
-  background-color: #eee;
-}
-.navbar__links--active {
-  background-color: #ccc;
-}
-.navbar__links--active:hover {
-  background-color: #ccc;
-}
+
 /* ------------start of hero------------ */
 
 .hero {

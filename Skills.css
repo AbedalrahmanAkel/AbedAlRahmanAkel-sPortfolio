@@ -25,41 +25,6 @@ li {
 header {
   min-height: 100vh;
 }
-/* Start of navbar */
-.navbar {
-  height: 7rem;
-  width: 100vw;
-  padding: 0rem 5vw;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar__signiture {
-  color: var(--main-color);
-  font-family: pacifico, "Courier New", Courier, monospace;
-  display: inline-block;
-  font-size: 2rem;
-}
-.navbar__linksContainer {
-  height: 2.4rem;
-}
-.navbar__links {
-  border-radius: 10px;
-  padding: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  height: 100%;
-}
-.navbar__links:hover {
-  background-color: #eee;
-}
-.navbar__links--active {
-  background-color: #ccc;
-}
-.navbar__links--active:hover {
-  background-color: #ccc;
-}
 /*------------- Start of hero ------------- */
 .hero {
   display: flex;
@@ -88,7 +53,7 @@ header {
 .hero__heading--sub::before,
 .hero__heading--sub::after {
   content: "";
-  width: 55rem;
+  width: 35vw;
   height: 2rem;
   background-color: #aaa;
   position: absolute;
@@ -100,13 +65,13 @@ header {
   background-color: var(--main-color);
 }
 .hero__li:first-of-type .hero__heading--sub::after {
-  width: 49rem;
+  width: 31vw;
 }
 .hero__li:nth-of-type(2) .hero__heading--sub::after {
-  width: 43rem;
+  width: 25vw;
 }
 .hero__li:nth-of-type(3) .hero__heading--sub::after {
-  width: 45rem;
+  width: 28vw;
 }
 /*-------------footer-------------*/
 body{

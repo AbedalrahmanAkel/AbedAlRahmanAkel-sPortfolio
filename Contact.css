@@ -29,40 +29,8 @@ header {
   height: 100vh;
 }
 /* Start of navbar */
-.navbar {
-  height: 7rem;
-  width: 100vw;
-  padding: 0rem 5vw;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar__signiture {
-  color: var(--main-color);
-  font-family: pacifico, "Courier New", Courier, monospace;
-  display: inline-block;
-  font-size: 2rem;
-}
-.navbar__linksContainer {
-  height: 2.4rem;
-}
-.navbar__links {
-  border-radius: 10px;
-  padding: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  height: 100%;
-}
-.navbar__links:hover {
-  background-color: #eee;
-}
-.navbar__links--active {
-  background-color: #ccc;
-}
-.navbar__links--active:hover {
-  background-color: #ccc;
-}
+
+/* End of navbar */
 /* ------------start of hero------------ */
 
 .hero {
@@ -73,15 +41,18 @@ header {
   padding-right: 0rem;
 }
 .hero__profile {
-  width: 36rem;
+  width: 35%;
   border-radius: 1000px;
   object-fit: cover;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .hero__content {
-  width: 60rem;
-  display: inline-block;
-  margin-right: 2rem;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .hero__heading {
   margin-bottom: 2rem;
@@ -96,8 +67,7 @@ header {
   margin-bottom: 2rem;
 }
 .hero__iconsContainer {
-  margin: 0 16rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   width: 24rem;
   display: flex;
   align-items: center;
@@ -109,8 +79,10 @@ header {
 .hero__icon:hover {
   fill: #000;
 }
+.hero__ctaContainer{
+  width: 100%;
+}
 .hero__cta {
-  margin: 0 20rem;
   display: inline-block;
   width: 14rem;
   text-align: center;

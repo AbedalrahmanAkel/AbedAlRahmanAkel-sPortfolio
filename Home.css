@@ -23,13 +23,13 @@ li {
   list-style: none;
 }
 header {
-  height: 100vh;
+  /* height: 80vh; */
 }
 /* Start of navbar */
 .navbar {
   height: 7rem;
   width: 100vw;
-  padding: 0rem 10rem;
+  padding: 0rem 5vw;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -63,12 +63,15 @@ header {
 /* ------------start of hero------------ */
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 10rem;
-  padding-right: 0rem;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
 }
 .hero__content {
-  width: 60rem;
+  width: 50%;
   display: inline-block;
   margin-right: 2rem;
 }
@@ -82,9 +85,8 @@ header {
   margin-bottom: 2rem;
 }
 .hero__background {
+  width: 40%;
   display: inline-block;
-  width: 60.646rem;
-  height: 42.818rem;
 }
 .hero__iconsContainer {
   margin-bottom: 4rem;
@@ -121,25 +123,24 @@ header {
 
 .pageTwo {
   width: 100vw;
-  height: 80vh;
+  margin-bottom: 5rem;
 }
 .pageTwo--flex {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .pageTwo__background {
-  width: 64.4rem;
-  height: 31.7rem;
+  width: 50%;
 }
 .pageTwo__content {
-  height: 36rem;
-  width: 60rem;
+  margin-left: 5rem;
+  width: 40%;
   display: inline-block;
 }
 .pageTwo__heading--main {
   letter-spacing: 3px;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   width: 100vw;
   text-align: center;
   font-size: 4.5rem;
@@ -157,71 +158,23 @@ header {
   margin-bottom: 1rem;
   font-size: 2.2rem;
 }
-.pageTwo__li--icons:first-child {
-  margin-left: 12rem;
-}
+
 .pageTwo__li--icons {
   margin-left: 2rem;
 }
-/*------------- Start of pageThree ------------- */
-.pageThree {
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  margin: 10rem 0;
-  padding-left: 8rem;
-}
-.pageThree__content {
-  width: 60rem;
-  display: inline-block;
-}
-.pageThree__background {
-  width: 62rem;
-  height: 58rem;
-}
-.pageThree__heading--main {
-  margin-bottom: 6rem;
-  font-size: 4.5rem;
-}
-.pageThree__heading--sub {
-  font-size: 2rem;
-  width: 100%;
-  margin-bottom: 6rem;
-  position: relative;
-}
-.pageThree__heading--sub::before,
-.pageThree__heading--sub::after {
-  content: "";
-  width: 55rem;
-  height: 2rem;
-  background-color: #aaa;
-  position: absolute;
-  bottom: -4rem;
-  left: 0;
-  border-radius: 16px;
-}
-.pageThree__heading--sub::after {
-  background-color: var(--main-color);
-}
-.pageThree__li:first-of-type .pageThree__heading--sub::after {
-  width: 46rem;
-}
-.pageThree__li:nth-of-type(2) .pageThree__heading--sub::after {
-  width: 31rem;
-}
-.pageThree__li:nth-of-type(3) .pageThree__heading--sub::after {
-  width: 36rem;
-}
-
 /*-------------footer-------------*/
-html {
+body{
   position: relative;
+  padding-bottom: 2rem;
 }
 footer {
   position: absolute;
   bottom: 1rem;
-  right: 0;
   left: 0;
+  right: 0;
   text-align: center;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 1020px){
+
 }

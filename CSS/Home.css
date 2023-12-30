@@ -32,7 +32,7 @@ header {
   margin-right: 2rem;
 }
 .hero__heading {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
 }
 .hero__paragraph {
   line-height: 44px;
@@ -134,6 +134,54 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 1020px){
+/*=============== Media =============== */
+@media screen and (max-width: 601px){
+  .hero{
+    padding-top:1rem;
+  }
+  .hero__content,.pageTwo__content{
+    width: 90%;
+  }
+  .hero__content{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__heading{
+    font-size: 3.2rem;
+  }
+  .hero__background, .pageTwo__background{
+    display: none;
+  }
+  .hero__cta{
+    margin: 0;
+  }
+  .pageTwo__content{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 413px){
+  .hero__heading{
+    font-size:2.6rem;
+    margin-bottom: .5rem;
+  }
+  .hero__paragraph{
+    line-height: 26px;
+    font-size:1.5rem;
+  }
+  .pageTwo__heading--main{
+    letter-spacing:2px;
+    font-size:3.5rem;
+  }
+  .pageTwo__heading--sub{
+    font-size: 2rem;
+  }
+  /*you have to Resize SVGS for mobile view GO BACK TO */
+  .pageTwo__li--text{
+    font-size:1.6rem ;
+    margin-bottom: .5rem;
 
+  }
 }

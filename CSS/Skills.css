@@ -36,6 +36,18 @@ header {
   bottom: -4rem;
   left: 0;
   border-radius: 16px;
+  animation: fillup 1.2s ease-in-out;
+}
+@keyframes fillUp{
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
 }
 .hero__heading--sub::after {
   background-color: var(--main-color);
@@ -61,4 +73,32 @@ footer {
   right: 0;
   text-align: center;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 601px){
+.hero{
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.hero__content{
+  width: 70%;
+}
+.hero__listContainer{
+  width: 90%;
+}
+
+.hero__background{
+  display: none;
+}
+.hero__heading--sub::before{
+  width: 75vw;
+}
+.hero__li:first-of-type .hero__heading--sub::after {
+  width: 71vw;
+}
+.hero__li:nth-of-type(2) .hero__heading--sub::after {
+  width: 65vw;
+}
+.hero__li:nth-of-type(3) .hero__heading--sub::after {
+  width: 68vw;
+}
 }

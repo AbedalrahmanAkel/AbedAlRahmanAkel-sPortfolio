@@ -1,15 +1,15 @@
 `use strict`;
 //---------------reveal---------------
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  let reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    console.log(elementTop);
-    console.log(windowHeight);
-    console.log(elementVisible);
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 200;
+    console.log(elementTop); //TEST
+    console.log(windowHeight); //TEST
+    console.log(elementVisible); //TEST
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
@@ -20,12 +20,12 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 //---------------Slide-left---------------
 function slideLeft() {
-  var slideLefts = document.querySelectorAll(".slideLeft");
+  let slideLefts = document.querySelectorAll(".slideLeft");
 
-  for (var i = 0; i < slideLefts.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = slideLefts[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+  for (let i = 0; i < slideLefts.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = slideLefts[i].getBoundingClientRect().top;
+    let elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
       slideLefts[i].classList.add("active");
@@ -37,12 +37,12 @@ function slideLeft() {
 window.addEventListener("scroll", slideLeft);
 //---------------Slide-Right---------------
 function slideRight() {
-  var slideRights = document.querySelectorAll(".slideRight");
+  let slideRights = document.querySelectorAll(".slideRight");
 
-  for (var i = 0; i < slideRights.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = slideRights[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+  for (let i = 0; i < slideRights.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = slideRights[i].getBoundingClientRect().top;
+    let elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
       slideRights[i].classList.add("active");
@@ -52,3 +52,8 @@ function slideRight() {
   }
 }
 window.addEventListener("scroll", slideRight);
+// -------------------- navbar Mobile View -----------------
+function navbarMobileView() {
+  let navbarLinksContainer = document.querySelector(".navbar__linksContainer");
+  navbarLinksContainer.classList.toggle("navbar--mobileView");
+}

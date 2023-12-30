@@ -39,7 +39,7 @@
 }
 @keyframes slide-up {
   0% {
-    transform: translateY(50px);
+    transform: translateY(40px);
     opacity: 0;
   }
   100% {
@@ -102,3 +102,9 @@
   opacity: 1;
 }
 /* -------------------------- */
+@media screen and (max-width: 601px){
+.reveal{
+  transform: translateX(-150px);
+}
+
+}

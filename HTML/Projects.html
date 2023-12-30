@@ -22,50 +22,57 @@
   </head>
   <body>
     <header>
-      <!-- Start of navbar -->
-      <div class="navbar">
+       <!-- Start of navbar -->
+       <div class="navbar">
         <div>
           <p class="navbar__signiture">&lt;</p>
           <p class="navbar__signiture">Abed Al Rahman Akel</p>
           <p class="navbar__signiture">/></p>
         </div>
-        <ul class="navbar__linksContainer">
-          <li>
-            <a
-              href="../HTML/Home.html"
+        <div class="navbar__hamMenu" onclick="navbarMobileView()">
+          <span class="navbar__hamMenu__span"></span>
+          <span class="navbar__hamMenu__span"></span>
+          <span class="navbar__hamMenu__span"></span>
+        </div>
+        <div class="navbar__linksContainer">
+          <div class="navbar__xSign" onclick="navbarMobileView()">
+            <div class="navbar__xSign__spanContainer">
+              <span class="navbar__xSign__span"></span>
+              <span class="navbar__xSign__span"></span>
+            </div>
+          </div>
+          <a href="../HTML/Home.html">
+            <p
               class="navbar__links"
               >Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="../HTML/Skills.html"
+            </p>
+          </a>
+          <a href="../HTML/Skills.html">
+            <p
               class="navbar__links"
               >Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href="../HTML/Education.html"
+            </p>
+          </a>
+          <a href="../HTML/Education.html"
+          >
+            <p
               class="navbar__links"
-              >Education</a
+              >Education</p
             >
-          </li>
-          <li>
-            <a
-              href="../HTML/Projects.html"
+          </a>
+          <a href="../HTML/Projects.html">
+            <p              
               class="navbar__links navbar__links--active"
-              >Projects</a
+              >Projects</p
             >
-          </li>
-          <li>
-            <a
-              href="../HTML/Contact.html"
+          </a>
+          <a  href="../HTML/Contact.html">
+            <p
               class="navbar__links"
-              >Contact Me</a
+              >Contact Me</p
             >
-          </li>
-        </ul>
+          </a>
+        </div>
       </div>
       <!-- End of navbar -->
       <div class="hero">

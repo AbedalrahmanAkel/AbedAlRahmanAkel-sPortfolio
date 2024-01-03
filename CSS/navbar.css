@@ -15,6 +15,14 @@
   --sub-color: #59bde7;
   --white-faded:#eee;
 }
+
+/* {
+  TEST
+--white-faded:#363549;
+color: #d7b3ad; Skin Tone 
+} */
+
+
 html {
   scroll-behavior: smooth;
   font-size: 10px;

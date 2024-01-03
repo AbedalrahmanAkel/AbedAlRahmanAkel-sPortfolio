@@ -43,8 +43,7 @@ header {
   padding: 2rem;
   margin-top: 4rem;
   transform:translateX(-50%) ;
-  width: 84rem;
-  height: 40rem;
+  width: 70vw;
   border-radius: 14px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   background: linear-gradient(
@@ -71,4 +70,51 @@ footer {
   right: 0;
   text-align: center;
   font-size: 1.2rem;
+}
+/*=============== Media =============== */
+@media screen and (max-width: 601px){
+  header{
+    height: 45vh;
+  }
+  .hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+  }
+  .hero__background{
+    display: none;
+  }
+  .hero__content{
+    width: fit-content;
+    margin: 0;
+  }
+  .pageTwo__card{
+    margin-top: 2rem;
+    width: 90vw;
+  }
+  .pageTwo__card ul{
+  width: 100%;
+  height: 100%;
+  }
+  .hero__heading--main{
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+  }
+  .hero__heading--sub{
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+  .pageTwo__heading {
+    font-size: 2rem;
+  }
+  .pageTwo__items:first-child{
+    margin: 0;
+  }
+  .pageTwo__items{
+    width: 100%;
+    height: 45%;
+    line-height: 20px;
+    font-size: 1.4rem;
+  }
 }

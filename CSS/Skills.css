@@ -1,5 +1,5 @@
 header {
-  min-height: 100vh;
+  height: 100vh;
 }
 /*------------- Start of hero ------------- */
 .hero {
@@ -74,7 +74,11 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
+/*=============== Media =============== */
 @media screen and (max-width: 601px){
+  header{
+    height:calc(100vh - 4rem);
+  }
 .hero{
   padding-left: 2rem;
   padding-top: 2rem;

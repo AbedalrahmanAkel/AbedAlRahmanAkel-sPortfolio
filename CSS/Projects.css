@@ -44,15 +44,15 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
 .pageTwo__cards {
   position: relative;
   background-color: whitesmoke;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   padding: 2rem;
   border-radius: 10px;
   width: 38rem;
-  height: 18rem;
   box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.3);
 }
 .pageTwo__cards:hover {
@@ -86,4 +86,40 @@ footer {
   left: 0;
   text-align: center;
   font-size: 1.2rem;
+}
+/*=============== Media =============== */
+@media screen and (max-width: 601px){
+  header{
+    height: 55vh;
+  }
+  .hero__background{
+    display: none;
+  }
+  .hero__contentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vh;
+  }
+  .hero__heading{
+    font-size:3.2rem;
+  }
+  .hero__paragraph{
+    font-size: 1.3rem;
+    line-height: 24px;
+    width: 90%;
+  }
+  .pageTwo__cards{
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 500px){
+  .pageTwo__cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pageTwo__cards{
+    width: 85vw;
+  }
+
 }
